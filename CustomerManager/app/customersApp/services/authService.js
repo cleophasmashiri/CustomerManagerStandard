@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
     var injectParams = ['$http', '$rootScope'];
 
@@ -47,4 +47,3 @@
     angular.module('customersApp').factory('authService', authFactory);
 
 }());
-

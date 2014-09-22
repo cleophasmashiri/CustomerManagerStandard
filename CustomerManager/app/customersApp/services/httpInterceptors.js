@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
     angular.module('customersApp')
         .config(['$httpProvider', function ($httpProvider) {
@@ -32,4 +32,4 @@
 
     }]);
 
-}());
+}()); 

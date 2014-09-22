@@ -46,7 +46,10 @@ function csrf(req, res, next) {
     next();
 }
 
+
 // Routes
+
+app.use(express.static(__dirname + '/Content'));
 
 app.get('/', routes.index);
 
@@ -70,6 +73,7 @@ app.get(baseUrl + 'CheckUnique/:id', api.checkUnique);
 app.post(baseUrl + 'Login', api.login);
 app.post(baseUrl + 'Logout', api.logout);
 
+app.post(baseUrl + 'Content/Images', api.logout);
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);

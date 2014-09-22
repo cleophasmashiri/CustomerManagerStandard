@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
     var app = angular.module('customersApp',
         ['ngRoute', 'ngAnimate', 'wc.directives', 'ui.bootstrap', 'breeze.angular.q']);
@@ -31,8 +31,7 @@
             .when('/login/:redirect*?', {
                 controller: 'LoginController',
                 templateUrl: viewBase + 'login.html'
-            })
-            .otherwise({ redirectTo: '/customers' });
+            }).otherwise({ redirectTo: '/customers' });
 
     }]);
 
@@ -53,4 +52,3 @@
 
         }]);
 }());
-

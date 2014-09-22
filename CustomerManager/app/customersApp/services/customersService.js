@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
 
     var injectParams = ['$http', '$q'];
 
@@ -45,7 +45,7 @@
                 return status.data;
             });
         };
-
+        
         factory.deleteCustomer = function (id) {
             return $http.delete(serviceBase + 'deleteCustomer/' + id).then(function (status) {
                 return status.data;
@@ -98,7 +98,7 @@
         // is this still used???
         function orderTotal(order) {
             return order.quantity * order.price;
-        };
+        }
 
         function ordersTotal(customer) {
             var total = 0;
@@ -109,7 +109,7 @@
                 total += orders[i].orderTotal;
             }
             return total;
-        };
+        }
 
         return factory;
     };

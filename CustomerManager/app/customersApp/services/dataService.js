@@ -1,4 +1,4 @@
-﻿(function () {
+ (function () {
 
     var injectParams = ['config', 'customersService', 'customersBreezeService'];
 
@@ -11,4 +11,3 @@
     angular.module('customersApp').factory('dataService', dataService);
 
 }());
-
