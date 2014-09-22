@@ -1,4 +1,4 @@
-﻿//<input type="text" data-lazy-load="" title="Hello world" />
+//<input type="text" data-lazy-load="" title="Hello world" />
 (function () {
 	// use this directive to delay assigning user input to the underlying 
 	// view model field until focus leaves the dom element. Useful for 
